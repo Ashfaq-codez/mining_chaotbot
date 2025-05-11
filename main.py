@@ -41,7 +41,7 @@ class QueryRequest(BaseModel):
 async def generate_response(query):
     try:
         # Set OpenAI API key (move this to an environment variable in production)
-        openai.api_key = 'sk-wtPcCDtPS65X7GpGVklNJZ3IcQvIu94jMQLgwgqSe4T3BlbkFJmOlb9neLBuS4GBj7GRfDSjVo-_c7jrXUX-VhhjcWEA'
+        openai.api_key = ''
 
         # Use the new method for chat completions
         response = openai.ChatCompletion.create(
